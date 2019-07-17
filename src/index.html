@@ -15,9 +15,24 @@
     <div class="column">
         <h3>Background Task</h3>
         <p>
-            These circles are moved in a background task (requestIdleCallback) and animated in requestAnimationFrame.
+            These circles are moved in a background task (requestIdleCallback) and drawn in requestAnimationFrame.
             Since the movement isn't critical to this page we can only animate if we have the processing power to do so.
         </p>
+    </div>
+</div>
+
+<div class="item">
+    <div class="column">
+        <h3>Broadcast Channels</h3>
+        <p>
+            Shy ghost is shy. Open another window to this page and send shy ghost a message. Maybe that will make shy ghost less shy.
+        </p>
+    </div>
+    <img id="ghost" >
+    <div id="broadcast-output"></div>
+    <div id="message" class="column">
+        <input id="broadcast-text" type="text" value="Enter a message for shy ghost" />
+        <input id="broadcast-submit" type="button" value="Submit" />
     </div>
 </div>
 
