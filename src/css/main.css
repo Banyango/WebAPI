@@ -1,3 +1,26 @@
-#text {
-    font-weight: bold;
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+    width: 200px;
+    margin: 50px;
+}
+
+.item {
+    margin: 2em;
+    display:flex;
+    flex-direction: row;
+}
+
+h1,h2,h3,h4 {
+    font-family: Futura, serif;
+}
+
+#backgroundTaskCanvas {
+    width: 300px;
+    height: 400px;
+    flex-grow: 3;
 }

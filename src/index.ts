@@ -1,5 +1,6 @@
 
 import './css/main.css'
+import {InitBackgroundCallbacks} from "./background_tasks/callback";
 
 class Message {
     text:string;
@@ -8,6 +9,4 @@ class Message {
     }
 }
 
-let welcomeMessage = new Message("Hello World from webpack");
-
-document.querySelector("#text").innerHTML = welcomeMessage.text;
+InitBackgroundCallbacks();
