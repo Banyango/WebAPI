@@ -29,6 +29,9 @@ export function SetupMediaSession() {
             }
         }
 
+    } else {
+        let element = document.getElementById("mediasession-support");
+        element.hidden = false
     }
 
 
