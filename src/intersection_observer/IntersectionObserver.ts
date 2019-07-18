@@ -11,7 +11,6 @@ class ThresholdList {
     }
 }
 
-
 export function IntersectionObserverSetup() {
 
     const options = {
