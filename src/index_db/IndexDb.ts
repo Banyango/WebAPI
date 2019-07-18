@@ -26,6 +26,13 @@ export function SetupIndexDB() {
         text.value = "";
 
         GetAllMessagesAndUpdateDiv();
+    };
+
+    const clear = <HTMLInputElement>document.querySelector('#indexdb-clear');
+    clear.onclick = ev => {
+        // @ts-ignore
+        db.messages.clear();
+        GetAllMessagesAndUpdateDiv();
     }
 }
 
