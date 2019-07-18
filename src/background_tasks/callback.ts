@@ -1,3 +1,6 @@
+// @ts-ignore
+import ghost_img from "../img/ghost.png"
+
 class Point {
     x: number;
     y: number;
@@ -87,12 +90,14 @@ export function InitBackgroundCallbacks() {
         let ctx = canvas.getContext("2d");
         ctx.clearRect(0,0, 500,500);
         ctx.fillStyle = "#ff2626";
+        let img = new Image();
+        img.src = ghost_img;
         for (let i = 0; i < pointList.points.length; i++) {
             ctx.save();
             let point = pointList.points[i];
             ctx.translate(point.x, point.y);
             ctx.beginPath();
-            ctx.arc(0, 0, 4, 0, 2 * Math.PI);
+            ctx.drawImage(img, 0,0 );
             ctx.fill();
             ctx.restore();
         }
