@@ -4,7 +4,7 @@ This repo contains my web api playground. I've implemented various web apis on a
 
 #### Demo
 
-Check out the demo (here)[sharp-einstein-f9609f]
+Check out the demo [here](https://sharp-einstein-f9609f.netlify.com/)
 
 
 #### Build yourself
